@@ -1,0 +1,166 @@
+#mainBody {
+  background: #3e3e3e;
+}
+
+#heading {
+  color: white;
+  text-align: center;
+  font: 2.6em Verdana;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-links li {
+  padding: 14px 20px;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  color: #aaa5a5;
+}
+
+.nav-links a {
+  position: relative;
+  color: #dcd5d5;
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+
+
+.page-container {
+  margin-top: 150px;
+}
+
+#searchbar {
+  text-align: center;
+}
+
+input {
+  all: unset;
+  text-align: left;
+  font: 16px system-ui;
+  color: #fff;
+  height: 100%;
+  width: 600px;
+  margin-top: 40px;
+  padding: 6px 10px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+}
+
+::placeholder {
+  color: #fff;
+  opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+#vizBody {
+  background: #8fb188;
+}
+
+#barChart {
+  display: block;
+}
+
+#searchBox {
+  margin-left: 25%;
+  width: 50%;
+}
+
+#d3viz,
+#d3viz2,
+#payGapViz,
+#boardCompViz {
+  margin-left: 25%;
+}
+
+.autocomplete-items {
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  top: 100%;
+  margin-left: 25%;
+  width: 50%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #8e8e8e;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.autocomplete-items div:hover {
+  background-color: #625f5f;
+}
+
+.autocomplete-active {
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+
+.scoreboard {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.org-row {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.org-name {
+  flex: 1;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.score-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.gauge {
+  width: 100px;
+  height: 100px;
+}
+
+@media (max-width: 600px) {
+  .org-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .score-container {
+    width: 100%;
+    padding: 10px;
+  }
+}
